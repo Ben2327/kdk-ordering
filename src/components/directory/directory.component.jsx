@@ -14,18 +14,21 @@ class Directory extends React.Component {
           imageUrl:
             "https://i.ndtvimg.com/i/2016-10/chicken-korma_650x400_51475662188.jpg",
           id: 1,
+          linkUrl: 'menu'
         },
         {
           title: "starters",
           imageUrl:
             "https://i.ytimg.com/vi/EpR4Ie0DR3I/maxresdefault.jpg",
           id: 2,
+          linkUrl: ''
         },
         {
           title: "beaverages",
           imageUrl:
             "https://www.madhurasrecipe.com/media/Egg-Kheema-1.jpg",
           id: 3,
+          linkUrl: ""
         },
         {
           title: "desert",
@@ -33,6 +36,7 @@ class Directory extends React.Component {
             "https://www.bonappetour.com/assets/images/asset_pictures/1438828773-5599539.jpeg",
           size: "large",
           id: 4,
+          linkUrl: ""
         },
         {
           title: "sides&others",
@@ -40,6 +44,7 @@ class Directory extends React.Component {
             "https://induspizza.com/wp-content/uploads/2017/11/chicken_popcorn.jpg",
           size: "large",
           id: 5,
+          linkUrl: ""
         },
       ],
     };
@@ -47,8 +52,8 @@ class Directory extends React.Component {
   render() {
     return (
       <div className="directory-menu">
-        {this.state.sections.map(({ title, imageUrl, id, size }) => (
-          <MenuItem key={id} title={title} imageUrl={imageUrl} size ={size} />
+        {this.state.sections.map(({ id, ...otherSectionProps }) => (
+          <MenuItem key={id} {...otherSectionProps} />
         ))}
       </div>
     );
