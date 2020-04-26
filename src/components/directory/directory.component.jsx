@@ -14,7 +14,7 @@ class Directory extends React.Component {
           imageUrl:
             "https://i.ndtvimg.com/i/2016-10/chicken-korma_650x400_51475662188.jpg",
           id: 1,
-          linkUrl: 'menu'
+          linkUrl: 'mainCourse'
         },
         {
           title: "starters",
@@ -31,7 +31,7 @@ class Directory extends React.Component {
           linkUrl: ""
         },
         {
-          title: "desert",
+          title: "desi breads",
           imageUrl:
             "https://www.bonappetour.com/assets/images/asset_pictures/1438828773-5599539.jpeg",
           size: "large",
@@ -39,7 +39,7 @@ class Directory extends React.Component {
           linkUrl: ""
         },
         {
-          title: "sides&others",
+          title: "chinese Tastes",
           imageUrl:
             "https://induspizza.com/wp-content/uploads/2017/11/chicken_popcorn.jpg",
           size: "large",
