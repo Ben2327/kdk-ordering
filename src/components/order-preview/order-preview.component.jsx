@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./order-preview.styles.scss";
-import Orderitem from '../order-item/order-item.component';
+import Orderitem from "../order-item/order-item.component";
 
 const OrderPreview = ({ title, items }) => (
   <div className="order-preview">
@@ -9,8 +9,8 @@ const OrderPreview = ({ title, items }) => (
     <div className="preview">
       {items
         .filter((item, idx) => idx < 4)
-        .map(({id, ...OtherItemProps}) => (
-          <Orderitem key={id}{...OtherItemProps}/>
+        .map((item) => (
+          <Orderitem key={item.id} item={item} />
         ))}
     </div>
   </div>
