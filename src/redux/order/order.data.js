@@ -1,8 +1,8 @@
-const ORDER_DATA = [
-  {
+const SHOP_DATA = {
+  maincourse:{
     id: 1,
     title: "Main Course",
-    routeName: "hats",
+    routeName: "maincourse",
     items: [
       {
         id: 1,
@@ -60,7 +60,7 @@ const ORDER_DATA = [
       },
     ],
   },
-  {
+  starters:{
     id: 2,
     title: "Starters",
     routeName: "starters",
@@ -97,7 +97,7 @@ const ORDER_DATA = [
       },
     ],
   },
-  {
+  beaverages:{
     id: 3,
     title: "Beaverages",
     routeName: "beaverages",
@@ -134,7 +134,7 @@ const ORDER_DATA = [
       },
     ],
   },
-  {
+  desibreads:{
     id: 4,
     title: "Desi Breads",
     routeName: "desibreads",
@@ -177,10 +177,10 @@ const ORDER_DATA = [
       },
     ],
   },
-  {
+  chinesetaste:{
     id: 5,
     title: "Chinese Taste",
-    routeName: "sides-others",
+    routeName: "chinesetaste",
     items: [
       {
         id: 26,
@@ -197,7 +197,7 @@ const ORDER_DATA = [
       {
         id: 28,
         name: "Veg Fried Rice",
-        imageUrl: "https://veggiefoodrecipes.com/wp-content/uploads/2018/12/Vegetable-Fried-Rice-Recipe-How-to-make-easy-Chinese-Veg-Fried-Rice-02-700X525.jpg",
+        imageUrl: "https://droolingfoodies.com/wp-content/uploads/2018/02/2732f629068295c8af030c400d04f290.jpg",
         price: 25,
       },
       {
@@ -209,7 +209,7 @@ const ORDER_DATA = [
       {
         id: 30,
         name: "Chicken Fried Rice",
-        imageUrl: "https://www.thespruceeats.com/thmb/m2xq7MOnb_iGu64ngTWQZKbwNp4=/1500x844/smart/filters:no_upscale()/classic-thai-chicken-fried-rice-3217140-17-5b3f881946e0fb003753c35f.jpg",
+        imageUrl: "https://www.simplyrecipes.com/wp-content/uploads/2017/12/2017-12-Chicken-Fried-Rice-3.jpg",
         price: 40,
       },
       {
@@ -219,8 +219,8 @@ const ORDER_DATA = [
         price: 25,
       },
     ],
-  },
-];
+  }
+};
 
-export default ORDER_DATA;
+export default SHOP_DATA;
  

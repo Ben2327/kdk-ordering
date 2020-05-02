@@ -1,28 +1,14 @@
-import React from "react";
-import ORDER_DATA from "./order.data";
+import React from 'react';
+import { Route } from 'react-router-dom';
+import CollectionsOverview from '../../components/collection-overview/collection-overview.component';
+import CollectionPage  from "../collection/collection.component";
 
-import OrderPreview from "../../components/order-preview/order-preview.component";
 
-class OrderPage extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      foods: ORDER_DATA,
-    };
-  }
-  render() {
-      const {foods} = this.state;
-    return (
-      <div className='order-page'>
-        {
-            foods.map(({id, ...OtherOrderProps}) => (
-                <OrderPreview key ={id} {...OtherOrderProps} /> 
-            ))
-        }
-      </div>
-    );
-  }
-}
+const OrderPage = ({ match }) => (
+  <div className='order-page'>
+    <Route exact path={`${match.path}`} component={CollectionsOverview} />
+    <Route path={`${match.path}/:collectionId`} component={CollectionPage} />
+  </div>
+);
 
 export default OrderPage;
